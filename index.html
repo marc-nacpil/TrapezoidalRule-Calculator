@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		
+		
+
+		<div>
+
+			<div class="main">
+
+				<!-- User Input -->
+				<div class="Left-Side">
+					<div class="title"> <h1>Trapezoidal Rule <span class="calc">Calculator</span></h1></div>
+					<form id="calculator">
+						<div class="input-group">
+							<label for="equation" class="input-label">Enter your equation:</label>
+							<input type="text" id="equation" placeholder="Enter your equation...">
+						</div>
+						
+						<div class="input-group">
+							<label for="lowerBound" class="input-label">Enter the lower bound:</label>
+							<input type="text" id="lowerBound" placeholder="Enter the lower bound...">
+						</div>
+						
+						<div class="input-group">
+							<label for="upperBound" class="input-label">Enter the upper bound:</label>
+							<input type="text" id="upperBound" placeholder="Enter the upper bound...">
+						</div>
+						
+						<div class="input-group">
+							<label for="subIntervals" class="input-label">Enter Number of Subintervals:</label>
+							<input type="text" id="subIntervals" placeholder="Enter Number of Subintervals...">
+						</div>
+						<input class="btn" type="submit" value="Calculate">
+					</form>
+				</div>
+	
+				<!-- Outpue -->
+				<div class="Right-Side">
+					<div>
+						<h1>Results  :</h1>
+						<p id="answer">Answer will be displayed here.</p>
+					</div>
+				</div>
+	
+			</div>
+
+		</div>
+		<div class="Copyright">
+			<h6>Buduan, Mark Joseph | Nacpil, Marc Jayson | CS302</h6>
+		</div>
+		<script src="script.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.4.0/math.min.js"></script>
+	</body>
+</html>

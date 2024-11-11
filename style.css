@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+	font-family: "Open Sans", sans-serif;
+}
+
+.main{
+  margin-top: 30px;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+
+h1{
+	letter-spacing: -1px;
+  font-size: 40px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.calc{
+	font-weight: 700;
+  color: #fd7b21;
+}
+
+.Left-Side{
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	margin-right: 50px;
+	border-radius: 30px;
+}
+
+.Right-Side{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  text-align: center;
+  width: 40%;
+	height: 80vh;
+	border-radius: 10px;
+	
+}
+
+#answer{
+  font-weight: 700;
+  font-size: 35px;
+  color: #fd7b21;
+  margin: -10px;
+}
+
+
+/* Spacing between inputs */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 100;
+    transition: color 0.3s ease-in-out;
+}
+
+.input-group label.orange {
+    color: #fd7b21;
+}
+
+input {
+    padding: 5px;
+	  width: 500px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+	  padding-left: 20px;
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+input.orange {
+    border-color: #fd7b21;
+    color: #fd7b21;
+}
+
+.btn{
+	height: 50px;
+	width: 530px;
+	margin-top: 10px;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	border-radius: 25px;
+	border: none;
+	background-color: black;
+}
+
+/* Button Hover Settings */
+.btn:hover{
+	background-color: #fd7b21;
+	transition: 0.3s ease-in-out;
+}
+
+h6{
+	color: black;
+	font-size: 10px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+/* Background */
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+body {
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 2.5s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 2.5s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 2.5s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 2.5s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
